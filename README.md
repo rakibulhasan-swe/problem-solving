@@ -1,1 +1,1 @@
-# problem-solving
+# problem-solved in (CodeChef, LeetCode, codeforces)
