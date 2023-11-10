@@ -11,12 +11,7 @@ int main()
 
     if(a>t) cout << "0\n";
     else {
-        int idx=2;
-        int count = b;
-        for(int i=a; i<=t; i+=(idx*a)){
-            count+=b;
-        }
-        cout << count << "\n";
+
     }
 
     return 0;
