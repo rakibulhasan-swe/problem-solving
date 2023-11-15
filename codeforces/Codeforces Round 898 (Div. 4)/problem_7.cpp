@@ -17,13 +17,13 @@ int main() {
         ll coins = 0;
         ll n = s.length();
 
-        for (int i = 0; i < n - 1; ++i) {
-            if (s[i] == 'A' && s[i + 1] == 'B') {
+        for(ll i=0; i<n-1; ++i){
+            if(s[i] == 'A' && s[i+1] == 'B'){
                 s[i] = 'B';
-                s[i + 1] = 'C';
+                s[i+1] = 'C';
                 coins++;
                 i-=2;
-            } else if (s[i] == 'B' && s[i + 1] == 'A') {
+            }else if(s[i] == 'B' && s[i+1] == 'A'){
                 s[i] = 'C';
                 s[i + 1] = 'B';
                 coins++;
