@@ -14,18 +14,21 @@ int main()
     cin >> n;
 
     vector<int>a(n);
-    vector<int>b(n);
 
     for(int i=0; i<n; i++) cin >> a[i];
-    for(int i=0; i<n; i++) cin >> b[i];
-
+    
+    map<int, int>mp;
+    for(int i=0; i<n; i++){
+        int b;
+        cin >> b;
+        mp[a[i]] = b;
+    }
     sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
 
     for(int i=0; i<n; i++) cout << a[i] << " ";
     cout << "\n";
 
-    for(int i=0; i<n; i++) cout << b[i] << " ";
+    for(int i=0; i<n; i++) cout << mp[a[i]] << " ";
     cout << "\n";
 
    } 
