@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "any": "cpp",
+    "bitset": "cpp"
+  }
+}
