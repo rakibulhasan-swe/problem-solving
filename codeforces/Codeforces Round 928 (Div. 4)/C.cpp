@@ -4,7 +4,7 @@ using namespace std;
 #define ll long long
 
 int sumOfDigits(int num) {
-    int sum = 0;
+    ll sum = 0;
     while (num > 0) {
         sum += num % 10;
         num /= 10;
@@ -13,6 +13,11 @@ int sumOfDigits(int num) {
 }
 
 int main() {
+    vector<int> v(2e5+1);
+    for (int i = 1; i <= 2e5; ++i) {
+        v[i] = v[i-1] + sumOfDigits(i);
+    }
+
     int t;
     cin >> t;
 
@@ -20,15 +25,7 @@ int main() {
         ll n;
         cin >> n;
 
-        ll sum = 0;
-        for (int i = 1; i <= n; ++i) {
-            if (i < 10) {
-                sum += i;
-            } else {
-                sum += sumOfDigits(i);
-            }
-        }
-        cout << sum << "\n";
+        cout << v[n] << "\n";
     }
 
     return 0;
