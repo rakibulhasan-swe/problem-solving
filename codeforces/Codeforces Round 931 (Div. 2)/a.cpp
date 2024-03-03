@@ -19,8 +19,6 @@ int main()
         sort(v.begin(), v.end());
         int max1 = v[n-1];
         int max2 = v[n-2];
-
-        sort(v.begin(), v.end());
         int min1 = v[0];
         int min2 = v[1];
 
