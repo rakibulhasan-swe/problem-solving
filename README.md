@@ -1,1 +1,1 @@
-# problem-solved in (CodeChef, LeetCode, codeforces) including contests
+# problem-solved in (CodeChef, LeetCode, codeforces, leetcode) including contests
