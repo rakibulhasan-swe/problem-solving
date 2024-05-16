@@ -18,7 +18,9 @@ int main()
             if(s[i-1]=='0' && s[i]=='1') cnt++;
             else if(s[i-1]=='1' && s[i]=='0') cnt1++;
         }
-        cout << cnt+(cnt1-1) << "\n";
+
+        int c = cnt ? cnt-1 : cnt;
+        cout << c+cnt1+1 << "\n";
     }
 
     return 0;
